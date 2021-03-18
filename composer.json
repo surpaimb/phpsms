@@ -1,0 +1,46 @@
+{
+  "name": "surpaimb/phpsms",
+  "description": "Probably the most intelligent, elegant sms send library in php",
+  "license": "MIT",
+  "keywords": ["sms", "php", "phpsms", "sms library"],
+  "authors": [
+    {
+      "name": "surpaimb",
+      "email": "surpaimb@126.com"
+    }
+  ],
+  "require": {
+    "php": "^7.3|^8.0",
+    "surpaimb/task-balancer": "dev-master",
+    "jeremeamia/superclosure": "~2.2"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "~4.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "Surpaimb\\PhpSms\\": [
+        "src/phpsms/",
+        "src/phpsms/agents/",
+        "src/phpsms/interfaces/"
+      ],
+      "Surpaimb\\PhpSms\\Facades\\": [
+        "src/phpsms/facades/"
+      ]
+    },
+    "classmap": [
+      "src/phpsms/lib/"
+    ]
+  },
+  "autoload-dev": {
+    "classmap": [
+      "tests/"
+    ]
+  },
+  "repositories": {
+    "local": {
+        "type": "path",
+        "url": "/Users/tuple/workspace/health/surpaimb"
+    }
+}
+}
